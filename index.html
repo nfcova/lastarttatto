@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lastart Tattoo</title>
+<meta name="description" content="Sadece bir dövme değil, bir hikâye. Lastart Tattoo Studio.">
+<meta name="theme-color" content="#e8f2f8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121212;
+  --ink-soft:#4a5560;
+  --ice:#e8f2f8;
+  --ice-deep:#cfe3ef;
+  --white:#ffffff;
+  --line:rgba(18,18,18,.14);
+  --serif:"Cormorant Garamond","Palatino Linotype",Georgia,serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(120% 70% at 50% 0%,var(--white) 0%,transparent 60%),
+    linear-gradient(180deg,var(--ice) 0%,var(--ice-deep) 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  min-height:100dvh;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+main{
+  min-height:100vh;
+  min-height:100dvh;
+  max-width:480px;
+  margin:0 auto;
+  padding:clamp(28px,6vh,56px) 24px clamp(24px,5vh,44px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.logo{
+  width:min(78%,320px);
+  height:auto;
+  display:block;
+}
+.studio{
+  margin-top:clamp(10px,2vh,18px);
+  font-size:.72rem;
+  letter-spacing:.5em;
+  text-indent:.5em;
+  color:var(--ink-soft);
+}
+.divider{
+  display:flex;align-items:center;gap:14px;
+  width:min(70%,240px);
+  margin:clamp(20px,4vh,34px) 0;
+  color:var(--ink);
+}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.divider span{font-size:.9rem;line-height:1}
+.slogan{
+  font-family:var(--serif);
+  font-weight:500;
+  color:var(--ink);
+}
+.slogan .l1{
+  display:block;
+  font-size:clamp(.95rem,4vw,1.15rem);
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.slogan .l2{
+  display:block;
+  margin-top:6px;
+  font-size:clamp(2.1rem,10vw,2.9rem);
+  font-weight:700;
+  letter-spacing:.03em;
+  line-height:1.05;
+  text-transform:uppercase;
+}
+.actions{
+  width:100%;
+  margin-top:auto;
+  padding-top:clamp(28px,6vh,52px);
+  display:grid;
+  gap:16px;
+}
+.btn{
+  display:flex;align-items:center;
+  gap:18px;
+  min-height:76px;
+  padding:0 22px;
+  text-decoration:none;
+  color:var(--ink);
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(18,18,18,.12);
+  border-radius:18px;
+  box-shadow:0 10px 28px -12px rgba(30,70,100,.35),inset 0 1px 0 #fff;
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.btn:active{transform:scale(.975);background:#fff}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.btn svg.icon{width:36px;height:36px;flex:none}
+.btn .sep{width:1px;align-self:stretch;margin:20px 0;background:var(--line)}
+.btn .label{
+  flex:1;text-align:left;
+  font-family:var(--serif);
+  font-size:clamp(1.2rem,5.2vw,1.45rem);
+  font-weight:600;
+  letter-spacing:.01em;
+}
+.btn svg.chev{width:20px;height:20px;flex:none;opacity:.8}
+@media (hover:hover){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px -12px rgba(30,70,100,.45),inset 0 1px 0 #fff}
+}
+.thanks{
+  margin-top:clamp(22px,4vh,34px);
+  font-family:var(--serif);
+  font-size:1rem;
+  letter-spacing:.06em;
+  color:var(--ink-soft);
+}
+@media (max-height:640px){
+  .logo{width:min(60%,240px)}
+  .btn{min-height:64px}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Lastart Tattoo" width="575" height="255" fetchpriority="high">
+  <p class="studio">TATTOO STUDIO</p>
+
+  <div class="divider" aria-hidden="true"><span>✦</span></div>
+
+  <h1 class="slogan">
+    <span class="l1">Sadece bir dövme değil,</span>
+    <span class="l2">Bir hikâye.</span>
+  </h1>
+
+  <nav class="actions" aria-label="Bağlantılar">
+    <a class="btn" href="https://share.google/4RfOuV3kI6BlwsUer" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 48 48" aria-hidden="true">
+        <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/>
+        <path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/>
+        <path fill="#FBBC05" d="M10.5 28.7c-.5-1.5-.8-3-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/>
+        <path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.500-5.800c-2.100 1.400-4.800 2.300-8.400 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/>
+      </svg>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="label">Google’da Yorum Yap</span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </a>
+
+    <a class="btn" href="https://instagram.com/lastarttattoo?dlrf=OG9zeGZnM3luNXdu" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#feda75"/>
+            <stop offset=".3" stop-color="#fa7e1e"/>
+            <stop offset=".55" stop-color="#d62976"/>
+            <stop offset=".8" stop-color="#962fbf"/>
+            <stop offset="1" stop-color="#4f5bd5"/>
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="12" fill="url(#ig)"/>
+        <rect x="10" y="10" width="28" height="28" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+        <circle cx="24" cy="24" r="6.500" fill="none" stroke="#fff" stroke-width="3"/>
+        <circle cx="32" cy="16" r="2" fill="#fff"/>
+      </svg>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="label">Instagram’da Bizi Takip Et</span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </a>
+  </nav>
+
+  <p class="thanks">Desteğin bizim için değerli.</p>
+</main>
+</body>
+</html>
